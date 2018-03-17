@@ -1,3 +1,6 @@
 [submodule "vim/.vim"]
 	path = vim/.vim
 	url = https://github.com/zarkdav/.vim.git
+[submodule "zsh/.zim"]
+	path = zsh/.zim
+	url = https://github.com/zarkdav/zimfw.git
