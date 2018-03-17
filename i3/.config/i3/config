@@ -169,6 +169,7 @@ gaps inner 10
 gaps outer 15
 
 exec_always VBoxClient-all
+exec --no-startup-id compton --config ~/.config/compton.conf
 exec --no-startup-id . $HOME/.local/bin/barstart &
 
 # where Pictures/Wallpapers is the directory you would want to get random wallpapers from
