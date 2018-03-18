@@ -8,12 +8,12 @@
 	local = yellow
 	remote = green
 [color "diff"]
-	meta = yellow
+	meta = yellow bold
+	commit = cyan bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-	commit = yellow bold
 [color "status"]
 	added = yellow
 	changed = green
@@ -22,19 +22,21 @@
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	autocrlf = input
 	excludesfile = ~/.cvsignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	editor=vim
+	pager = diff-so-fancy | vimpager -c 'set filetype=git nowrap'
 [alias]
 	st = status
 	ci = commit
 	br = branch
 	co = checkout
-	df = diff
-	dc = diff --cached
+	df = diff --patch-with-stat --color --color-words --abbrev
+	dc = diff --patch-with-stat --color --color-words --abbrev --cached
 	lg = log -p
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = ls-files
 	ign = ls-files -o -i --exclude-standard
+	patch = !git --no-pager diff --no-color
 [branch]
 	autosetupmerge = true
 [url "ssh://gitolite@code.intercloud.fr/"]
@@ -44,3 +46,5 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[merge]
+	tool=vimdiff
