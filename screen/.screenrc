@@ -71,12 +71,12 @@ bind - command -c selectHighs   #bind the hyphen to
 # TERMINAL SETTINGS
 # ------------------------------------------------------------------------------
 
-term screen-256color-s
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+term screen-256color-bce-s
+#termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 
 #caption always '%{kg}%S %{kb} %L=%-w%45L>%{rb}%{wr} %n%f %t %{rb}%{kb}%+w%-019= %{kg} %d/%m %c'
-caption always "%{kg}%S %{kb} %L=%=%-w%45L>%{wr} %n-%t %{kb}%+w%=%-13=%{kg} %d/%m %c"
-defbce on
+hardstatus alwayslastline "%{kg}%S %{kb} %L=%=%-w%45L>%{wr} %n-%t %{kb}%+w%=%-13=%{kg} %d/%m %c"
+#defbce on
 #
 #
 # ------------------------------------------------------------------------------
