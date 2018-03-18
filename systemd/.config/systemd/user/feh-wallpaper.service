@@ -1,0 +1,9 @@
+[Unit]
+Description=Random wallpaper with feh
+
+[Service]
+Type=oneshot
+ExecStart=/home/zarkdav/.local/bin/feh-bg
+
+[Install]
+WantedBy=default.target
