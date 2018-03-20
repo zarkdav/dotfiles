@@ -23,7 +23,7 @@
 	autocrlf = input
 	excludesfile = ~/.cvsignore
 	editor=vim
-	pager = diff-so-fancy | vimpager -c 'set filetype=git nowrap'
+#	pager = diff-so-fancy | vimpager -c 'set filetype=git nowrap'
 [alias]
 	st = status
 	ci = commit
