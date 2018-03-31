@@ -23,7 +23,7 @@
 	autocrlf = input
 	excludesfile = ~/.cvsignore
 	editor=vim
-	pager = diff-so-fancy | vimpager -c 'set filetype=git nowrap'
+#	pager = diff-so-fancy | vimpager -c 'set filetype=git nowrap'
 [alias]
 	st = status
 	ci = commit
@@ -41,6 +41,8 @@
 	autosetupmerge = true
 [url "ssh://gitolite@code.intercloud.fr/"]
 	insteadof = "code:"
+[url "ssh://git@github.com/zarkdav/"]
+	insteadof = "github:"
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
