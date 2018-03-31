@@ -41,7 +41,7 @@
 	autosetupmerge = true
 [url "ssh://gitolite@code.intercloud.fr/"]
 	insteadof = "code:"
-[url "ssh://git@github.com/zarkdav/"]
+[url "ssh://git@github.com/"]
 	insteadof = "github:"
 [color "diff-highlight"]
 	oldNormal = red bold
