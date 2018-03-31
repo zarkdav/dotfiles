@@ -1,3 +1,5 @@
+export GREP_COLOR="01;37"
+export GREP_COLORS="ms=01;37:mc=01;37:sl=:cx=01;30:fn=35:ln=32:bn=32:se=36"
 PATH=~/.local/bin:$PATH
 
 BASE16_SHELL=$HOME/.config/base16-shell/
