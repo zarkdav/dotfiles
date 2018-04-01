@@ -71,8 +71,7 @@ bind - command -c selectHighs   #bind the hyphen to
 # TERMINAL SETTINGS
 # ------------------------------------------------------------------------------
 
-#term screen-256color-bce-s
-term xterm-256color
+term screen-256color
 
 #caption always '%{kg}%S %{kb} %L=%-w%45L>%{rb}%{wr} %n%f %t %{rb}%{kb}%+w%-019= %{kg} %d/%m %c'
 hardstatus alwayslastline "%{kg}%S %{kb} %L=%=%-w%45L>%{wr} %n-%t %{kb}%+w%=%-13=%{kg} %d/%m %c"
