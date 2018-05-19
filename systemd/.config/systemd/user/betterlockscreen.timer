@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for update betterlockscreen cache and select new random wallpaper
+
+[Timer]
+OnActiveSec=5sec
+OnUnitActiveSec=10min
+Unit=betterlockscreen.service
+
+[Install]
+WantedBy=X.target

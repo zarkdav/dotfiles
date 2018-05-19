@@ -1,0 +1,9 @@
+[Unit]
+Description=Update betterlockscreen cache and select new random wallpaper
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/betterlockscreen -u /usr/local/share/Wallpapers
+
+[Install]
+WantedBy=X.target
