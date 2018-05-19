@@ -188,6 +188,10 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 
 assign [class="^Firefox$"] $w1
+assign [class="^Termite$"] $w2
+assign [class="^Gvim$"] $w2
+assign [class="^Gvim$"] $w2
+assign [class="^KeePass2$"] $w3
 
 gaps inner 10
 gaps outer 15
