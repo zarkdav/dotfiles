@@ -29,7 +29,7 @@ module-margin-left = 0
 
 modules-right = updates filesystem battery date menu0
 modules-center = mpd volume
-modules-left = i3 wlan eth cpu memory
+modules-left = i3 wlan eth vpn cpu memory
 
 background = #66090909
 foreground = ${colors.white}
@@ -206,6 +206,21 @@ format-disconnected-underline = ${colors.gray}
 
 label-connected = 
 label-disconnected = 
+label-disconnected-foreground = ${colors.gray}
+
+[module/vpn]
+type = internal/network
+interface = tun0-unrooted
+interval = 3.0
+
+format-connected-padding = 1
+format-disconnected-padding = 1
+
+format-connected-underline = ${colors.white}
+format-disconnected-underline = ${colors.gray}
+
+label-connected = 嬨
+label-disconnected = 嬨
 label-disconnected-foreground = ${colors.gray}
 
 
