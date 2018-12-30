@@ -58,3 +58,16 @@ rofi.color-window:       argb:dd315975, argb:dd315975, #55a5f6
 rofi.color-normal:       argb:99315975, #e8e8e8, argb:00315975, #55a5f6, #ffffff
 rofi.color-active:       argb:99315975, #55a5f6, argb:00315975, #55a5f6, #66c6ff
 rofi.color-urgent:       argb:99315975, #da4281, argb:00315975, #55a5f6, #890661
+
+SshAskpass*font:                    -b&h-lucida-medium-r-normal-*-*-100-*-*-*-*-iso8859-1
+SshAskpass*background:              #315975
+SshAskpass*foreground:              #e8e8e8
+SshAskpass.Button*background:       #55a5f6
+SshAskpass.Indicator*foreground:    #55a5f6
+SshAskpass.Indicator*background:    #2b303b
+SshAskpass*topShadowColor:          #315975
+SshAskpass*bottomShadowColor:       #315975
+SshAskpass.*borderWidth:            0
+SshAskpass.Indicator.minimumCount:  6
+SshAskpass.Indicator.maximumCount:  6
+SshAskpass.Indicator.horizontalSpacing:  0
