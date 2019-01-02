@@ -461,6 +461,8 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (add-hook 'term-mode-hook #'eterm-256color-mode)
+  (setq magit-repository-directories '(("~/Documents/src/com.github" . 2)
+                                      ("~/Documents/src/fr.intercloud" . 2)))
   (setq twittering-use-master-password t)
   (setq epa-pinentry-mode 'loopback)
   )
