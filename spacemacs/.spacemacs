@@ -55,6 +55,7 @@ This function should only modify configuration layer settings."
             shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
+     twitter
      version-control
      xkcd
      )
@@ -460,6 +461,8 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (add-hook 'term-mode-hook #'eterm-256color-mode)
+  (setq twittering-use-master-password t)
+  (setq epa-pinentry-mode 'loopback)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
