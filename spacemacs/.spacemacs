@@ -45,7 +45,9 @@ This function should only modify configuration layer settings."
      better-defaults
      colors
      emacs-lisp
-     git
+     (git :variables
+          magit-repository-directories '(("~/Documents/src/com.github" . 2)
+                                         ("~/Documents/src/fr.intercloud" . 2)))
      markdown
      multiple-cursors
      neotree
@@ -56,7 +58,9 @@ This function should only modify configuration layer settings."
             shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
-     twitter
+     (twitter :variables
+              twittering-user-master-password t
+              epa-pinentry-mode 'loopback)
      version-control
      xkcd
      )
@@ -462,10 +466,6 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (add-hook 'term-mode-hook #'eterm-256color-mode)
-  (setq magit-repository-directories '(("~/Documents/src/com.github" . 2)
-                                      ("~/Documents/src/fr.intercloud" . 2)))
-  (setq twittering-use-master-password t)
-  (setq epa-pinentry-mode 'loopback)
   ;; When opening a file that is a symbolic link, don't ask whether I want to follow the link. Just do it
   (setq find-file-visit-truename t)
   )
