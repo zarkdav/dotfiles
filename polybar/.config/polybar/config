@@ -230,9 +230,9 @@ type = internal/network
 interface = tun0-unrooted
 interval = 3.0
 
-label-connected = "嬨"
+label-connected = %{A1:systemctl stop openvpn@intercloud-unrooted.service:}嬨%{A}
 label-connected-foreground = #dfaf00
-label-disconnected = "嬨"
+label-disconnected = %{A1:systemctl start openvpn@intercloud-unrooted.service:}嬨%{A}
 label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
