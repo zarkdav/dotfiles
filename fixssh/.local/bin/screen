@@ -1,0 +1,5 @@
+#!/bin/sh
+
+~/.local/bin/grabssh
+/usr/bin/screen $@
+echo "SSH grabbed"
