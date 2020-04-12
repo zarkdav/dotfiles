@@ -6,6 +6,7 @@ defutf8 on
 utf8 on on
 
 startup_message off
+msgwait 0
 #nethack on
 
 #defflow on # will force screen to process ^S/^Q
@@ -74,7 +75,7 @@ bind - command -c selectHighs   #bind the hyphen to
 term screen-256color
 
 #caption always '%{kg}%S %{kb} %L=%-w%45L>%{rb}%{wr} %n%f %t %{rb}%{kb}%+w%-019= %{kg} %d/%m %c'
-hardstatus alwayslastline "%{kg}%S %{kb} %L=%=%-w%45L>%{wr} %n-%t %{kb}%+w%=%-13=%{kg} %d/%m %c"
+hardstatus alwayslastline "%{kK}%S %{Kk} %L=%=%-w%45L>%{kK} %n-%t %{Kk}%+w%=%-13=%{kK} %d/%m %c"
 #
 #
 # ------------------------------------------------------------------------------
