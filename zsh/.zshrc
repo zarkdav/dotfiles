@@ -16,4 +16,4 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
 fi
 
-PROMPT='%F{yellow}[%D %T] '$PROMPT
+#PROMPT='%F{yellow}[%D %T] '$PROMPT
