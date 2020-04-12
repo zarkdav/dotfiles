@@ -17,4 +17,3 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
 fi
 
 PROMPT='%F{yellow}[%D %T] '$PROMPT
-
