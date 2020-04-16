@@ -52,3 +52,5 @@
 	newHighlight = green bold 22
 [merge]
 	tool=vimdiff
+[push]
+	default = simple
