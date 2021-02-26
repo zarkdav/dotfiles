@@ -54,3 +54,5 @@
 	tool=vimdiff
 [push]
 	default = simple
+[pull]
+	rebase = false

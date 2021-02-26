@@ -72,8 +72,8 @@ bind - command -c selectHighs   #bind the hyphen to
 # TERMINAL SETTINGS
 # ------------------------------------------------------------------------------
 
-#caption always '%{kg}%S %{kb} %L=%-w%45L>%{rb}%{wr} %n%f %t %{rb}%{kb}%+w%-019= %{kg} %d/%m %c'
-hardstatus alwayslastline "%{kK}%S %{Kk} %L=%=%-w%45L>%{kK} %n-%t %{Kk}%+w%=%-13=%{kK} %d/%m %c"
+caption always '%{kg}%S %{kb} %L=%-w%45L>%{rb}%{Wr} %n%f %t %{rb}%{kb}%+w%-019= %{kg} %d/%m %c'
+#hardstatus alwayslastline "%{kK}%S %{Kk} %L=%=%-w%45L>%{kK} %n-%t %{Kk}%+w%=%-13=%{kK} %d/%m %c"
 #
 #
 # ------------------------------------------------------------------------------
