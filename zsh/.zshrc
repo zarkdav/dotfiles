@@ -23,3 +23,9 @@ if (( $+commands[oh-my-posh] )); then
   POSH_THEMES_PATH=$HOME/.local/share/oh-my-posh/themes
   eval "$(oh-my-posh init zsh --config $POSH_THEMES_PATH/jandedobbeleer.omp.json)"
 fi
+
+if [[ -d "$HOME/.nvm" ]] ; then
+  export NVM_DIR="$HOME/.nvm"
+  [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+  [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
