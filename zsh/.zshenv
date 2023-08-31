@@ -4,3 +4,4 @@ if [[ ! -z "$TERMCAP" && "$TERM" =~ "^screen" ]]; then
 fi
 path=( ${path[@]:#*/mnt/*} )
 PATH=$HOME/.local/bin:$PATH
+test -f "$HOME/.cargo/env" && source "$HOME/.cargo/env"
