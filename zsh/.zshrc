@@ -16,4 +16,10 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
 fi
 
-#PROMPT='%F{yellow}[%D %T] '$PROMPT
+PROMPT='%F{yellow}[%D %T] '$PROMPT
+
+if (( $+commands[oh-my-posh] )); then
+  prompt off
+  POSH_THEMES_PATH=$HOME/.local/share/oh-my-posh/themes
+  eval "$(oh-my-posh init zsh --config $POSH_THEMES_PATH/jandedobbeleer.omp.json)"
+fi
