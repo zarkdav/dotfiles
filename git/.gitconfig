@@ -1,6 +1,7 @@
 [user]
 	name = Benjamin Ryzman
 	email = benjamin@ryzman.fr
+	signingkey = 67E0FBA6
 [color]
 	ui = true
 [color "branch"]
@@ -39,12 +40,8 @@
 	patch = !git --no-pager diff --no-color
 [branch]
 	autosetupmerge = true
-[url "ssh://gitolite@code.intercloud.fr/"]
-	insteadof = "code:"
 [url "ssh://git@github.com/"]
 	insteadof = "github:"
-[url "ssh://git@gitlab.intercloud.fr/"]
-	insteadof = "gitlab:"
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
