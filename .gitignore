@@ -1,1 +1,9 @@
+screen/.terminfo/
+!screen/.terminfo/s/
+!screen/.terminfo/s/screen.xterm-256color
 systemd/.config/systemd/user/default.target.wants
+tmux/.tmux/plugins/
+!tmux/.tmux/plugins/tpm/
+vim/.local/
+!vim/.local/bin/
+!vim/.local/bin/vimpager
