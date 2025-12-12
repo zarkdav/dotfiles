@@ -33,3 +33,10 @@ fi
 if (( $+commands[zoxide] )); then
   eval "$(zoxide init zsh)"
 fi
+
+HISHTORY=$HOME/.hishtory
+if [[ -d $HISHTORY ]]; then
+  export PATH="$PATH:$HISHTORY"
+  source $HISHTORY/config.sh
+fi
+unset HISHTORY
