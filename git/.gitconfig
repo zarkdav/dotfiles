@@ -53,3 +53,5 @@
 	default = simple
 [pull]
 	rebase = false
+[diff]
+	submodule = log
