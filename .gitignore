@@ -7,3 +7,6 @@ tmux/.tmux/plugins/
 vim/.local/
 !vim/.local/bin/
 !vim/.local/bin/vimpager
+zsh/.zim/
+!zsh/.zim/modules/
+!zsh/.zim/modules/custom
