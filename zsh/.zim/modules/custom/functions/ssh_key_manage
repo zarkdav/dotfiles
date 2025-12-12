@@ -1,6 +1,6 @@
-if [[ -x `which keychain` ]] ; then
+if (( $+commands[keychain] )); then
     # run keychain
-    keychain --inherit any-once id_rsa id_ecdsa
+    keychain --ssh-allow-forwarded id_rsa id_ecdsa $DEBSIGN_KEYID
     [[ -r ~/.ssh-agent-`hostname` ]] && . ~/.ssh-agent-`hostname`
     [[ -r ~/.keychain/`hostname`-sh ]] &&  source ~/.keychain/`hostname`-sh
     [[ -r ~/.keychain/`hostname`-sh-gpg ]] &&  source ~/.keychain/`hostname`-sh-gpg
@@ -24,7 +24,3 @@ else
         fi
     fi
 fi
-
-#ln -sf $(find /tmp -maxdepth 2 -type s -name "agent*" -user $USER -printf '%T@ %p\n' 2>/dev/null |sort -n|tail -1|cut -d' ' -f2) ~/.ssh/ssh_auth_sock
-
-#export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
