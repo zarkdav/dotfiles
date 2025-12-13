@@ -57,6 +57,7 @@ zstyle ':z4h:ssh-agent:' start yes
 z4h install chriskempson/base16-shell || return
 z4h install ajeetdsouza/zoxide || return
 z4h install MichaelAquilina/zsh-you-should-use || return
+z4h install fdellwing/zsh-bat || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -82,6 +83,7 @@ z4h source ~/.env.zsh
 z4h load    chriskempson/base16-shell
 z4h load    ajeetdsouza/zoxide
 z4h load    MichaelAquilina/zsh-you-should-use
+z4h load    fdellwing/zsh-bat
 
 # Define key bindings.
 z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
