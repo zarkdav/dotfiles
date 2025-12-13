@@ -58,6 +58,7 @@ z4h install chriskempson/base16-shell || return
 z4h install ajeetdsouza/zoxide || return
 z4h install MichaelAquilina/zsh-you-should-use || return
 z4h install fdellwing/zsh-bat || return
+z4h install zdharma-continuum/history-search-multi-word || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -84,6 +85,7 @@ z4h load    chriskempson/base16-shell
 z4h load    ajeetdsouza/zoxide
 z4h load    MichaelAquilina/zsh-you-should-use
 z4h load    fdellwing/zsh-bat
+z4h load    zdharma-continuum/history-search-multi-word
 
 # Define key bindings.
 z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
@@ -144,11 +146,3 @@ if [[ -d "$HOME/.nvm" ]] ; then
   [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"  # This loads nvm
   [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
-
-# Hishtory
-HISHTORY=~/.hishtory
-if [[ -d $HISHTORY ]]; then
-  path=( $HISHTORY $path )
-  source $HISHTORY/config.zsh
-fi
-unset HISHTORY
