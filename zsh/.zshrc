@@ -54,6 +54,7 @@ zstyle ':z4h:ssh-agent:' start yes
 # up-to-date. Cloned files can be used after `z4h init`. This is just an
 # example. If you don't plan to use Oh My Zsh, delete this line.
 # z4h install ohmyzsh/ohmyzsh || return
+z4h install chriskempson/base16-shell || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -76,6 +77,7 @@ z4h source ~/.env.zsh
 # This is just an example that you should delete. It does nothing useful.
 #z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
 #z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
+z4h load    chriskempson/base16-shell
 
 # Define key bindings.
 z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
@@ -125,9 +127,6 @@ fi
 
 export GREP_COLOR="01;37"
 export GREP_COLORS="ms=01;37:mc=01;37:sl=:cx=01;30:fn=35:ln=32:bn=32:se=36"
-
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" -a -s $BASE16_SHELL/profile_helper.sh -a "$TERM" != "eterm-256color" ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Vi keyboard -- incompatible with z4h
 # bindkey -v
