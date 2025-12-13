@@ -55,6 +55,7 @@ zstyle ':z4h:ssh-agent:' start yes
 # example. If you don't plan to use Oh My Zsh, delete this line.
 # z4h install ohmyzsh/ohmyzsh || return
 z4h install chriskempson/base16-shell || return
+z4h install ajeetdsouza/zoxide || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -78,6 +79,7 @@ z4h source ~/.env.zsh
 #z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
 #z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
 z4h load    chriskempson/base16-shell
+z4h load    ajeetdsouza/zoxide
 
 # Define key bindings.
 z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
@@ -137,11 +139,6 @@ if [[ -d "$HOME/.nvm" ]] ; then
   export NVM_DIR="$HOME/.nvm"
   [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"  # This loads nvm
   [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-fi
-
-# Zoxide
-if (( $+commands[zoxide] )); then
-  eval "$(zoxide init zsh)"
 fi
 
 # Hishtory
