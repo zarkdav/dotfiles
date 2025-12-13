@@ -1,0 +1,6 @@
+if (( $+commands[keychain] )); then
+  keychain --ssh-allow-forwarded id_rsa id_ecdsa $DEBSIGN_KEYID
+  [[ -r ~/.ssh-agent-`hostname` ]] && . ~/.ssh-agent-`hostname`
+  [[ -r ~/.keychain/`hostname`-sh ]] &&  source ~/.keychain/`hostname`-sh
+  [[ -r ~/.keychain/`hostname`-sh-gpg ]] &&  source ~/.keychain/`hostname`-sh-gpg
+fi
