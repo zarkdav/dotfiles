@@ -16,6 +16,13 @@ if [ -n "${ZSH_VERSION-}" ]; then
     export DEBSIGN_KEYID=67E0FBA6
     export LANG=en_US.UTF-8
     test -f "$HOME/.cargo/env" && source "$HOME/.cargo/env"
+
+    # nvm (Node version manager)
+    if [[ -d "$HOME/.nvm" ]] ; then
+      export NVM_DIR="$HOME/.nvm"
+      [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+      [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    fi
   #
   # Do not change anything else in this file.
 

@@ -139,10 +139,3 @@ export GREP_COLORS="ms=01;37:mc=01;37:sl=:cx=01;30:fn=35:ln=32:bn=32:se=36"
 # Vi keyboard -- incompatible with z4h
 # bindkey -v
 # KEYTIMEOUT=1
-
-# nvm (Node version manager)
-if [[ -d "$HOME/.nvm" ]] ; then
-  export NVM_DIR="$HOME/.nvm"
-  [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"  # This loads nvm
-  [[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-fi
